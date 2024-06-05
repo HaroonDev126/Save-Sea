@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @*<meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8">*@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/asset/style.css">
+    <title>SAVE SEAS - 21101001-126</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Save Sea</h1>
+                </div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="btn">
+                    <a href="#">Donate</a>
+                </div>
+            </nav>
+            <div class="content">
+                <h1>WHO Recognized Organization</h1>
+                <p>We have been in service since 2006, and we have saved 120 million tons of waste from the ocean.</p>
+                <div class="button">
+                    <a href="#">Our Services</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Impact</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Take Action</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Educational Materials</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><img src="~/asset/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="~/asset/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="~/asset/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="~/asset/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
