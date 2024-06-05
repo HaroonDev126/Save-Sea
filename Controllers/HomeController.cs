@@ -11,14 +11,38 @@ namespace Save_Sea.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewData["Message"] = " Hello world";
             return View();
-        }public ActionResult Services()
+
+        }
+        public ActionResult Index1()
+        {
+           TempData["Message"] = " Hello world";
+            return View();
+
+
+
+        }
+        public ActionResult Index2()
+        {
+            TempData["Message"] = " Hello world";
+            return RedirectToAction("About");
+
+
+        }
+
+
+
+        public ActionResult Services() {
+
+            return View();
+        }
+
+          public ActionResult About()
         {
             return View();
-        }public ActionResult About()
-        {
-            return View();
-        }public ActionResult Contact()
+        }
+    public ActionResult Contact()
         {
             return View();
         }
