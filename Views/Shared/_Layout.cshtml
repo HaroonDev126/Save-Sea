@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Save_Seas - 21101001-126</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Save_Seas.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <nav>
+                <div class="logo">
+                    <h1>Save Sea</h1>
+                </div>
+                <ul>
+                    <li><a href="/Home/Index">HOME</a></li>
+                    <li><a href="/About/About">ABOUT</a></li>
+                    <li><a href="/Contact/Contact">CONTACT</a></li>
+                    
+                </ul>
+                <div class="btn">
+                    <a href="#">Donate</a>
+                </div>
+            </nav>
+ 
+        </div>
+
+    </header>
+    <div class="">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Impact</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Take Action</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Educational Materials</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><img src="~/asset/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="~/asset/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="~/asset/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="~/asset/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
